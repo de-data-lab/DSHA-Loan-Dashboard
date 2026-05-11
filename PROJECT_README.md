@@ -27,6 +27,7 @@ DSHA-Loan-Dashboard/
 │   │   ├── Header.tsx
 │   │   ├── NavSidebar.tsx
 │   │   └── Tooltip.tsx
+│   │   └── charts/DemographicInfo/ # Demographic Info charts (AgeofApplication, County, FemaleHeadHousehold, RaceDistribution)
 │   ├── App.tsx            # Main app layout and routing
 │   ├── main.tsx           # App entry point
 │   └── index.css          # Global styles (Tailwind)
@@ -60,6 +61,18 @@ DSHA-Loan-Dashboard/
 - **DPAChart**: Bar chart of DPA descriptions, filtered.
 - **MedianScoreChart**: Histogram of median credit scores, filtered.
 - **DemographicInfoLayout**: Grid of demographic charts (age, race, county, female head of household).
+
+#### Demographic Info Charts
+
+- **AgeofApplication**: Distribution of applicants' ages at the time of application.
+- **County**: Loan distribution by county.
+- **FemaleHeadHousehold**: Loans by female head of household status.
+- **RaceDistribution**: Loan distribution by race.
+
+All Demographic Info charts:
+- Are located in `src/components/charts/DemographicInfo/`.
+- Use the global filter context for dynamic updates.
+- Are displayed together in the DemographicInfoLayout grid.
 
 All charts:
 - Fetch data from a remote JSON endpoint.

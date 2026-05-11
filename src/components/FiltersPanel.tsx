@@ -90,8 +90,8 @@ export default function FiltersPanel() {
         onChange={vals => setFilters(f => ({ ...f, race: vals }))}
       />
       <div className="space-y-3">
-        <h3 className="text-[18px] font-semibold text-gray-900">Age At Application (bin)</h3>
-        <div className="flex items-center justify-between text-sm text-gray-600">
+        <h3 className="text-[18px] font-semibold text-white">Age At Application (bin)</h3>
+        <div className="flex items-center justify-between text-sm text-gray-200">
           <span>0</span>
           <span>97</span>
         </div>
@@ -101,7 +101,7 @@ export default function FiltersPanel() {
           max={97}
           value={filters.ageAtApplication[1]}
           onChange={e => setFilters(f => ({ ...f, ageAtApplication: [0, Number(e.target.value)] }))}
-          className="w-full accent-gray-800"
+          className="w-full accent-blue"
         />
       </div>
       <FilterSection
